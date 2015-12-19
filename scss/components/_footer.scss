@@ -1,0 +1,25 @@
+/**
+ * Site Footer
+ */
+.site-footer {
+  border-top: 2px solid $purple;
+  padding: 5px 0;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  color: lighten($text-dark, 40%);
+  @include clearfix;
+  @include bp(sm) {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: lighten($text-dark, 40%);
+    font-weight: 700;
+    &:hover {
+      color: lighten($purple, 10%);
+    }
+  }
+
+}

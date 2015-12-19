@@ -1,0 +1,186 @@
+.bio-wrap {
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.bio {
+	background-color: $white;
+	box-shadow: 0 1px 2px lighten($black, 70%);
+	width: 48%;
+	margin-right: 2%;
+	padding: 20px;
+	margin-bottom: 20px;
+	&:last-child { margin-right: 0; }
+	@include bp(md) {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.connect-links {
+		text-align: center;
+		margin: 0;
+		a {
+			padding: 2px 4px;
+			font-size: 0.9rem;
+			border-radius: 2px;
+			&:hover {
+				color: $text-white;
+				background-color: $purple;
+			}
+		}
+	}
+
+}
+
+/**
+ * About page timeline
+ */
+.story-entry-list {
+  position: relative;
+	@include bp(md) { margin-left: 40px; }
+
+  // Time "line"
+  &:before {
+    background-color: $purple;
+    content: '';
+    height: 100%;
+    margin-left: -2px;
+    position: absolute;
+    top: 0; left: 50%;
+    width: 4px;
+		@include bp(md) {
+			left: 0;
+      margin-left: 0;
+		}
+  }
+
+}
+
+.story-entry {
+  margin-bottom: 40px;
+  position: relative;
+	@include clearfix;
+}
+
+.story-content {
+  background-color: $white;
+	box-shadow: 0 1px 2px lighten($black, 70%);
+  padding: 20px;
+  position: relative;
+  width: 45%;
+	@include bp(md) {
+		margin-left: 40px;
+		width: auto;
+	}
+
+  p:last-of-type { margin: 0; }
+
+  // Content box arrow
+  &:before {
+    border: 12px solid transparent;
+    content: '';
+    position: absolute;
+    top: 14px;
+  }
+
+}
+
+.story-date {
+  color: $text-dark;
+	font-size: 1.2rem;
+	font-weight: 100;
+  position: absolute;
+  top: 14px;
+  width: 100%;
+  @include bp(md) {
+    display: block;
+    margin-bottom: 20px;
+    position: static;
+  }
+}
+
+.story-entry {
+
+  &:nth-of-type(odd) .story-content {
+
+    .story-date { left: 120%; }
+
+    // Content box arrow
+    // Left side
+    &:before {
+      border-left-color: $white;
+      right: -24px;
+    }
+
+    @include bp(md) {
+      border-right: 0;
+      &:before {
+        border-right-color: $white;
+        border-left-color: transparent;
+        right: auto;
+        left: -24px;
+      }
+    }
+
+  }
+
+  &:nth-of-type(even) .story-content {
+    float: right;
+		@include bp(md) {
+			float: none;
+		}
+
+    .story-date {
+      right: 120%;
+      text-align: right;
+      @include bp(md) {
+        text-align: left;
+      }
+    }
+
+    // Content box arrow
+    // Right side
+    &:before {
+      border-right-color: $white;
+      left: -24px;
+    }
+
+  }
+
+  // Timeline marker
+  &:before {
+    background-color: $purple;
+    border: 2px solid $westar;
+    border-radius: 16px;
+    content: '';
+    height: 28px;
+    margin-left: -16px;
+    position: absolute;
+    top: 10px; left: 50%;
+    width: 28px;
+    @include bp(md) { left: 2px; }
+  }
+
+}
+
+.stories-year {
+  height: 100px;
+  margin-bottom: 40px;
+  position: relative;
+
+  > span {
+    background-color: $purple;
+    border: 2px solid $westar;
+    border-radius: 50px;
+    color: $text-white;
+    font-size: 1.5rem;
+    line-height: 96px;
+    margin-left: -50px;
+    position: absolute;
+      top: 0; left: 50%;
+    text-align: center;
+    width: 100px;
+    @include bp(md) { left: 0; }
+  }
+
+}

@@ -1,0 +1,28 @@
+/**
+ * Base styles
+ */
+* { box-sizing: border-box; }
+
+html {
+	font: 16px/1.5 $font-base, arial;
+	color: $text-dark;
+}
+
+body {
+	border-top: 8px solid $purple;
+	background-color: $body-background;
+}
+
+.page-wrap {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.page-container {
+	padding: 20px 0;
+}
+
+.content {
+	@include clearfix();
+}

@@ -1,0 +1,32 @@
+a:link,
+a:visited {
+	color: $purple;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darken($purple, 10%);
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-weight: 100;
+	span {
+		display: block;
+		font-size: 0.9rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}

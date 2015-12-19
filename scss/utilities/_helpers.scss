@@ -1,0 +1,11 @@
+.align-left  { float: left; }
+.align-right { float: right; }
+.align-left,
+.align-right {
+	@include bp(sm) { float: none; }
+}
+.align-center { text-align: center; }
+
+.clearfix { @include clearfix; }
+
+img { max-width: 100%; }
