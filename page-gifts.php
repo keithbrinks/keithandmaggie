@@ -14,7 +14,7 @@
 		<?php endwhile; ?>
 
 		<section class="gifts clearfix">
-			<a class="registery align-left" href="https://www.surlatable.com/registry/viewGiftRegistry.jsp?giftlistId=2001374459372" target="_blank">
+			<a class="registery align-left" href="http://www.surlatable.com/registry/giftRegistryList.jsp?id=2001374459372" target="_blank">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/surlatable.jpg" alt="Sure la table" />
 			</a>
 			<a class="registery align-right" href="http://www.target.com/gift-registry/registry/KuqUTIQ90L79NVvDd5Ma8w" target="_blank">
