@@ -1,0 +1,24 @@
+a.registery {
+	display: block;
+	background-color: $white;
+	box-shadow: 0 1px 2px lighten($black, 70%);
+	width: 48%;
+	margin-right: 2%;
+	padding: 20px;
+	text-align: center;
+	&:last-child { margin-right: 0; }
+	@include bp(md) {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+}
+
+a.registery img {
+	max-width: 300px;
+	height: auto;
+}
+
+a.registery:hover {
+	box-shadow: 0 1px 3px lighten($black, 40%);
+}
