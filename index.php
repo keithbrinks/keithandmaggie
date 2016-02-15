@@ -3,7 +3,7 @@
 <div class="page-container">
 
 	<section class="intro-photo">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/engagement-photo.jpg" alt="Keith &amp; Maggie" />
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home-photo.jpg" alt="Keith &amp; Maggie" />
 	</section>
 
 	<section id="countdown" class="countdown">
